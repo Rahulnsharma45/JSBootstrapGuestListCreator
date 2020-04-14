@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Guest List Creator</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-6 text-center mt-4">Guest List Creator <i class="fa fa-users" aria-hidden="true"></i></h1>
+        <form id="guest-form">
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" name="first-name" id="first-name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" name="last-name" id="last-name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" name="number" pattern="[0-9]" maxlength="10" id="number" class="form-control">
+            </div>
+            <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="important">
+                <label class="form-check-label">Mark Guest as Important</label>
+            </div>
+            <input type="submit" value="Add guest" class="btn btn-primary btn-block">
+        </form>
+
+        <div class="row">
+            <div class="card col-md-5 m-4  bg-info">
+                <div class="card-body text-white">
+                  <h5 class="card-title text-center">Number of Guests</h5>
+                  <p class="card-text text-center">5</p>
+                </div>
+            </div>
+            <div class="card col-md-5 m-4 bg-success">
+                <div class="card-body text-white">
+                  <h5 class="card-title text-center">Important Guests</h5>
+                  <p class="card-text text-center">5</p>
+                </div>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Important</th>
+              </tr>
+            </thead>
+          </table>
+
+      
+    </div>
+    
+
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.container{ 
+    max-width:850px; 
+    width:100%; 
+  }
+
+.row {
+    display: flex;
+    justify-content: center;
+ }
