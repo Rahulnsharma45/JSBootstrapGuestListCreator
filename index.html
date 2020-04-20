@@ -22,7 +22,7 @@
             </div>
             <div class="form-group">
                 <label>Phone Number</label>
-                <input type="tel" name="number" pattern="[0-9]" maxlength="10" id="number" class="form-control">
+                <input type="tel" name="number" id="number" class="form-control">
             </div>
             <div class="form-check mb-3">
                 <input type="checkbox" class="form-check-input" id="important">
@@ -46,7 +46,7 @@
             </div>
         </div>
 
-        <table class="table">
+        <table class="table" id="guest-table">
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -54,8 +54,11 @@
                 <th scope="col">Last</th>
                 <th scope="col">Phone Number</th>
                 <th scope="col">Important</th>
+                <th></th>
               </tr>
             </thead>
+            <tbody id="guest-list-body"></tbody>
+                
           </table>
 
       
